@@ -1,0 +1,43 @@
+{
+  "name": "email-templates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready transactional email templates in React Email, MJML, HTML and plain text.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Groundmail/email-templates.git"
+  },
+  "homepage": "https://groundmail.github.io/email-templates/",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts --port 3000",
+    "build": "tsx scripts/build.ts",
+    "build:site": "tsx scripts/build.ts --site",
+    "check": "tsx scripts/build.ts --check",
+    "push": "tsx scripts/push.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-email/render": "^2.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-email": "^6.11.3"
+  },
+  "devDependencies": {
+    "@react-email/ui": "^6.11.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "doiuse-email": "^0.4.1",
+    "groundmail-cli": "^0.16.4",
+    "mjml": "^5.4.1",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

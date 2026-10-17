@@ -1,0 +1,14 @@
+Confirm your email address
+
+Hi {{name}},
+
+Confirm that this is your email address to finish setting up your account:
+
+{{verify_url}}
+
+This link expires in {{expires_in}}. If you didn't create an account, you can ignore this email.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

@@ -1,0 +1,13 @@
+Your account is scheduled for deletion
+
+Hi {{name}}, as you asked, we'll permanently delete your account and all of its data on {{deletion_date}}.
+
+Changed your mind? You can restore your account any time before {{deletion_date}}:
+{{restore_url}}
+
+After that date the deletion can't be undone. If you didn't ask to delete your account, restore it now and change your password.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

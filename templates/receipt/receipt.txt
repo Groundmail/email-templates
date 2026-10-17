@@ -1,0 +1,21 @@
+Thanks for your payment
+
+Hi {{name}}, we received your payment of {{total}}. Here's your receipt.
+
+Receipt number: {{receipt_number}}
+Date paid:      {{paid_at}}
+Payment method: {{payment_method}}
+
+{{item_description}}: {{item_amount}}
+Subtotal:             {{subtotal}}
+Tax:                  {{tax}}
+Total paid:           {{total}}
+
+View invoice: {{receipt_url}}
+
+Questions about this charge? Reply to this email and we'll help.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

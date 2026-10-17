@@ -1,0 +1,20 @@
+New sign-in to your account
+
+Hi {{name}}, your account was just signed in to from a device we haven't seen before.
+
+When:       {{signed_in_at}}
+Device:     {{device}}
+Location:   {{location}}
+IP address: {{ip_address}}
+
+If this was you, there's nothing to do.
+
+If it wasn't, secure your account now. We'll help you change your password and sign out every other session:
+{{secure_url}}
+
+Locations are estimated from the IP address and may not be exact.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

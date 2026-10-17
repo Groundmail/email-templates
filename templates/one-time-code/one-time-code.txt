@@ -1,0 +1,12 @@
+Your verification code
+
+Enter this code to continue: {{code}}
+
+The code expires in {{expires_in}}. We will never ask you for this code by phone, chat or email, so don't share it with anyone.
+
+Didn't request a code? Someone may know your password. Change it to keep your account safe.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

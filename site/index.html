@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transactional Email Templates</title>
+    <meta
+      name="description"
+      content="__COUNT__ free, MIT-licensed transactional email templates in React Email, MJML, HTML and plain text: password reset, magic link, receipts, invites and more. Light and dark mode."
+    />
+    <meta property="og:title" content="Transactional Email Templates" />
+    <meta
+      property="og:description"
+      content="__COUNT__ free transactional email templates in React Email, MJML, HTML and plain text. Copy, restyle, send."
+    />
+    <meta property="og:image" content="https://app.groundmail.dev/images/github/social-email-templates.png" />
+    <meta property="og:url" content="https://groundmail.github.io/email-templates/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23a3461f'/%3E%3Cpath d='M7 11l9 6 9-6' stroke='%23fff' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='7' y='9' width='18' height='14' rx='2' stroke='%23fff' stroke-width='2.4' fill='none'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Email templates
+      </a>
+      <nav class="topnav">
+        <a href="https://github.com/Groundmail/email-templates">GitHub</a>
+        <a href="https://docs.groundmail.dev/guides/email-templates">Docs</a>
+        <a class="cta" href="https://groundmail.dev/?utm_source=email-templates&amp;utm_medium=site">Send with Groundmail</a>
+      </nav>
+    </header>
+
+    <main id="gallery" class="gallery" hidden>
+      <section class="hero">
+        <h1>Transactional email templates</h1>
+        <p class="lede">
+          __COUNT__ production-ready templates for auth, account and billing email. Each one comes as a React Email
+          component, MJML, HTML and plain text, works in light and dark mode, and restyles from one theme file.
+        </p>
+        <p class="hero-actions">
+          <a class="button" href="https://github.com/Groundmail/email-templates">Get them on GitHub</a>
+          <span class="badge">MIT licensed · free · no sign-up</span>
+        </p>
+      </section>
+      <div id="grid"></div>
+    </main>
+
+    <div id="detail" class="detail" hidden>
+      <aside class="sidebar">
+        <label class="mobile-picker">
+          <span class="visually-hidden">Template</span>
+          <select id="picker"></select>
+        </label>
+        <nav id="nav"></nav>
+      </aside>
+      <section class="content">
+        <div class="content-head">
+          <div>
+            <h1 id="t-name"></h1>
+            <p id="t-desc" class="muted"></p>
+            <p class="subject"><span class="muted">Subject</span> <code id="t-subject"></code></p>
+          </div>
+        </div>
+        <div class="tabs" role="tablist" id="tabs">
+          <button role="tab" data-tab="preview">Preview</button>
+          <button role="tab" data-tab="tsx">React Email</button>
+          <button role="tab" data-tab="mjml">MJML</button>
+          <button role="tab" data-tab="html">HTML</button>
+          <button role="tab" data-tab="text">Text</button>
+          <button role="tab" data-tab="send">Send with Groundmail</button>
+        </div>
+
+        <div id="pane-preview" class="pane">
+          <div class="toolbar">
+            <div class="seg" data-group="scheme">
+              <button data-value="light">Light</button><button data-value="dark">Dark</button>
+            </div>
+            <div class="seg" data-group="device">
+              <button data-value="desktop">Desktop</button><button data-value="mobile">Mobile</button>
+            </div>
+            <div class="seg" data-group="source">
+              <button data-value="react">React Email</button><button data-value="mjml">MJML</button>
+            </div>
+          </div>
+          <div class="stage" id="stage">
+            <iframe id="frame" title="Email preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+          </div>
+          <p class="note muted">
+            Dark mode here simulates clients that honour <code>prefers-color-scheme</code> (Apple Mail, iOS Mail,
+            Outlook for Mac, Outlook.com). Gmail applies its own color inversion instead.
+          </p>
+        </div>
+
+        <div id="pane-code" class="pane" hidden>
+          <div class="code-head">
+            <span id="code-file" class="file"></span>
+            <span class="code-actions">
+              <a id="code-github" target="_blank" rel="noopener">View on GitHub</a>
+              <button class="copy" data-copy="code">Copy</button>
+            </span>
+          </div>
+          <pre class="code"><code id="code"></code></pre>
+        </div>
+
+        <div id="pane-send" class="pane" hidden>
+          <h2>1. Create it in your Groundmail account</h2>
+          <p class="muted">
+            Creates a template with the alias <code class="alias"></code> and publishes it. Needs an API key with the
+            <code>templates:write</code> scope.
+            <a href="https://app.groundmail.dev/signup?utm_source=email-templates&amp;utm_medium=site">Get a free key</a>
+            (3,000 emails a month free).
+          </p>
+          <div class="snippets" id="push"></div>
+          <h2>2. Send it</h2>
+          <p class="muted">Send by alias and pass the variables. Or skip step 1 and send the React component directly.</p>
+          <div class="snippets" id="send"></div>
+          <h2>Variables</h2>
+          <table class="vars">
+            <thead>
+              <tr><th>Placeholder</th><th>React prop</th><th>Example</th></tr>
+            </thead>
+            <tbody id="vars"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Free and open source under the MIT license. Use them with any email provider.
+        Built by <a href="https://groundmail.dev/?utm_source=email-templates&amp;utm_medium=site">Groundmail</a>,
+        the transactional email API on its own mail servers.
+      </p>
+    </footer>
+
+    <script>
+      window.__TEMPLATES__ = /*__MANIFEST__*/[]
+    </script>
+  </body>
+</html>

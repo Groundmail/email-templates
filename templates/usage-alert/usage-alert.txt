@@ -1,0 +1,15 @@
+You've used {{usage_percent}}% of your {{metric}}
+
+Hi {{name}}, you're getting close to your plan's limit for this billing period.
+
+Used:      {{used}} of {{limit}}
+Resets on: {{resets_on}}
+
+To avoid interruptions, upgrade your plan before you reach the limit: {{upgrade_url}}
+
+You can change when you get these alerts in your account settings.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

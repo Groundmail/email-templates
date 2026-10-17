@@ -1,0 +1,17 @@
+Your subscription renews soon
+
+Hi {{name}}, your {{plan_name}} plan renews automatically on {{renewal_date}}. You don't need to do anything to keep it.
+
+Plan:           {{plan_name}}
+Amount:         {{amount}}
+Renews on:      {{renewal_date}}
+Payment method: {{payment_method}}
+
+Manage your subscription: {{manage_url}}
+
+To change plans or cancel, do it before {{renewal_date}} and you won't be charged for the next period.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

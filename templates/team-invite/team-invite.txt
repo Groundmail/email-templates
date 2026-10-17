@@ -1,0 +1,12 @@
+Join {{team_name}}
+
+{{inviter_name}} invited you to join the {{team_name}} team with the {{role}} role.
+
+Accept the invitation: {{invite_url}}
+
+This invitation expires in {{expires_in}}. If you weren't expecting it, you can ignore this email.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

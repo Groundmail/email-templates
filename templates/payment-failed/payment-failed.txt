@@ -1,0 +1,18 @@
+Your payment didn't go through
+
+Hi {{name}}, we couldn't charge your {{payment_method}} for your {{plan_name}} plan. This usually happens when a card expires or the bank declines the charge.
+
+Plan:         {{plan_name}}
+Amount due:   {{amount}}
+Next attempt: {{retry_date}}
+
+Update your payment method before {{retry_date}} to keep your account active:
+
+{{update_url}}
+
+Already updated your details? You can ignore this email.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

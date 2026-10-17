@@ -1,0 +1,5 @@
+node_modules/
+site/dist/
+.preview-emails/
+.react-email/
+.DS_Store

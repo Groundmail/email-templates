@@ -1,0 +1,21 @@
+Welcome, {{name}}
+
+Thanks for signing up. Your account is ready. Here are three good places to start:
+
+1. Set up your workspace
+   Add your details so everything is ready when you need it.
+
+2. Invite your team
+   Work together from day one. Teammates join with one click.
+
+3. Get help any time
+   Reply to this email and a real person will get back to you.
+
+Go to your dashboard: {{dashboard_url}}
+
+Questions? Reply to this email or visit the help center: {{help_url}}
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105

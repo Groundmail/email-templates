@@ -1,0 +1,12 @@
+Your sign-in link
+
+Open this link to sign in. No password needed:
+
+{{login_url}}
+
+This link expires in {{expires_in}} and works once. If you didn't try to sign in, you can safely ignore this email.
+
+--
+
+Acme
+Acme Inc. · 100 Market Street · San Francisco, CA 94105
