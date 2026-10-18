@@ -61,10 +61,16 @@ async function load(slug) {
   return cache.get(slug)
 }
 
-/** Clients that support dark mode apply the prefers-color-scheme block; force it for the preview. */
+/**
+ * Pin the preview to the chosen scheme, whatever the viewer's OS is set to:
+ * dark forces the prefers-color-scheme block on, light switches it off.
+ */
 function forScheme(html, scheme) {
-  const out = html.replace('<head>', '<head><base target="_blank" />')
-  return scheme === 'dark' ? out.replace(/@media \(prefers-color-scheme: dark\)/g, '@media all') : out
+  return html
+    .replace('<head>', '<head><base target="_blank" />')
+    .replace(/@media \(prefers-color-scheme: dark\)/g, scheme === 'dark' ? '@media all' : '@media not all')
+    .replace(/color-scheme: light dark/g, `color-scheme: ${scheme}`)
+    .replace(/(<meta name="(?:supported-)?color-scheme" content=")light dark(")/g, `$1${scheme}$2`)
 }
 
 function grouped() {
