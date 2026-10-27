@@ -24,7 +24,7 @@ A large, copyable verification code for 2FA, sign-in or checkout confirmation.
 
 ## Create it in your Groundmail account
 
-Each command creates (or updates) a template with the alias `one-time-code` and publishes it. Get an API key with the `templates:write` scope at [app.groundmail.dev](https://app.groundmail.dev/signup).
+Each command creates (or updates) a template with the alias `one-time-code` and publishes it. Get an API key with the `templates:write` scope at [app.groundmail.dev](https://app.groundmail.dev/signup?utm_source=github&utm_medium=readme&utm_campaign=email-templates).
 
 **From a clone**
 

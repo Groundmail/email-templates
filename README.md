@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://groundmail.dev">
+  <a href="https://groundmail.dev?utm_source=github&utm_medium=readme&utm_campaign=email-templates">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://app.groundmail.dev/images/github/readme-logo-dark.png">
       <img alt="Groundmail" src="https://app.groundmail.dev/images/github/readme-logo-light.png" height="44">
@@ -22,8 +22,8 @@
 
 <p align="center">
   <a href="https://groundmail.github.io/email-templates/"><b>Live preview</b></a> ·
-  <a href="https://docs.groundmail.dev/guides/email-templates">Docs</a> ·
-  <a href="https://app.groundmail.dev/signup">Get a free account</a>
+  <a href="https://docs.groundmail.dev/guides/email-templates?utm_source=github&utm_medium=readme&utm_campaign=email-templates">Docs</a> ·
+  <a href="https://app.groundmail.dev/signup?utm_source=github&utm_medium=readme&utm_campaign=email-templates">Get a free account</a>
 </p>
 
 ---
@@ -190,4 +190,4 @@ Adding a template: create `templates/<name>/<name>.tsx` and `<name>.mjml` (copy 
 | Agent skills and Claude Code plugin | [Groundmail/groundmail-skills](https://github.com/Groundmail/groundmail-skills) |
 | Email templates (React Email, MJML, HTML) | [Groundmail/email-templates](https://github.com/Groundmail/email-templates) |
 
-[Website](https://groundmail.dev) · [Docs](https://docs.groundmail.dev) · [Pricing](https://groundmail.dev/pricing) · [Sign up free](https://app.groundmail.dev/signup)
+[Website](https://groundmail.dev?utm_source=github&utm_medium=readme&utm_campaign=email-templates) · [Docs](https://docs.groundmail.dev?utm_source=github&utm_medium=readme&utm_campaign=email-templates) · [Pricing](https://groundmail.dev/pricing?utm_source=github&utm_medium=readme&utm_campaign=email-templates) · [Sign up free](https://app.groundmail.dev/signup?utm_source=github&utm_medium=readme&utm_campaign=email-templates)
