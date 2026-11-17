@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: groundbox-4vcpu
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -31,7 +31,7 @@ jobs:
           path: site/dist
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: groundbox-2vcpu
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
